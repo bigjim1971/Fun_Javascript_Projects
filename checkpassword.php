@@ -7,7 +7,7 @@ if (isset($_POST["q"]) && isset($_POST["r"])) {
 	$q=$_POST["q"]; // Password
 	
 } else {
-	header( 'Location: http://kiss-five/sites/All-JS-projects/games/index.php' ) ;
+	header( 'Location: http://localhost:8888/sites/password1/index.php' ) ;
 }
 
 $r = strtolower($r);
