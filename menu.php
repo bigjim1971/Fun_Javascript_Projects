@@ -4,7 +4,7 @@
 	$nowTime = time();
 	$checkTime = intval($_SESSION['password']);
 	if ($checkTime + 180 >= $nowTime && $checkTime <= $nowTime) {} else {
-		header( 'Location: http://kiss-five/sites/All-JS-projects/games/index.php' ) ;
+		header( 'Location: http://localhost:8888/sites/password1/index.php' ) ;
 	} 
 ?>
 
