@@ -42,9 +42,9 @@
 	  		var output = xmlhttp.onreadystatechange = 	function(aEvt) {
 		  		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 		  			if (xmlhttp.responseText == "go") {
-		  				location = "http://kiss-five/sites/All-JS-projects/games/menu.php";
+		  				location = "http://localhost:8888/sites/password1/menu.php";
 		  			} else {
-		  				location = "http://kiss-five/sites/All-JS-projects/games/index.php";
+		  				location = "http://localhost:8888/sites/password1/index.php";
 		  			}
 		  		}
 
