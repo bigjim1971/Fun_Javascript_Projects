@@ -14,7 +14,18 @@ div {}
 <?php
 if (isset($_POST["user"]) && isset($_POST["pass"])) {
 
-echo("<div>Hi</div>");
+	$username = $_POST["user"]; // User Name
+	$password = $_POST["pass"]; // Password
+
+	if (    ($username == "markey123456789@gmail.com" && "ebel1")
+		 || ($username == "thomasjebel@gmail.com" && "ebel2")
+		) {
+		
+			echo("<div>Hi</div>");
+		} else {
+			echo("<div>Sorry You Are Not allowed IN</div>");
+		} 
+
 
 } else {
 
