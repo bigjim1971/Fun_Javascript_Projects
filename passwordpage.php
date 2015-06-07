@@ -17,8 +17,8 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
 	$username = $_POST["user"]; // User Name
 	$password = $_POST["pass"]; // Password
 
-	if (    ($username == "markey123456789@gmail.com" && "ebel1")
-		 || ($username == "thomasjebel@gmail.com" && "ebel2")
+	if (    ($username == "markey123456789@gmail.com" && $password == "ebel1")
+		 || ($username == "thomasjebel@gmail.com" && $password == "ebel2")
 		) {
 		
 			echo("<div>Hi</div>");
