@@ -16,7 +16,6 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
 
 echo("<div>Hi</div>");
 
-
 } else {
 
 echo('
@@ -37,11 +36,6 @@ Password:</br>
 ');
 }
 ?>
-
-
-
-
-
 
 </body>
 </html>
