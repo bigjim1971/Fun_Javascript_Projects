@@ -19,9 +19,9 @@ echo("<div>Hi</div>");
 
 } else {
 
-echo(
+echo('
 
-'<form action="passwordpage.php" method="post">
+<form action="passwordpage.php" method="post">
 Username:</br> 
 <input type="text" name="user">
 </br>
