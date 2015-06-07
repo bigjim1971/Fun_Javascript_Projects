@@ -19,12 +19,11 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
 
 	if (    ($username == "markey123456789@gmail.com" && $password == "ebel1")
 		 || ($username == "thomasjebel@gmail.com" && $password == "ebel2")
-		) {
-		
-			echo("<div>Hi</div>");
-		} else {
-			echo("<div>Sorry You Are Not allowed IN</div>");
-		} 
+	) {
+		echo("<div>Hi</div>");
+	} else {
+		echo("<div>Sorry You Are Not allowed IN</div>");
+	} 
 
 
 } else {
