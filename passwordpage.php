@@ -3,8 +3,8 @@
 <head>
 
 <style>
-body{}
-div {}
+body{background-color: cyan; width: 100%; height: 100%;}
+div {margin: 200px auto ; font-size: 450%; color: black; width: 200px; height: 150px;}
 </style>
 
 </head>
@@ -13,23 +13,17 @@ div {}
 
 <?php
 if (isset($_POST["user"]) && isset($_POST["pass"])) {
-
 	$username = $_POST["user"]; // User Name
 	$password = $_POST["pass"]; // Password
-
 	if (    ($username == "markey123456789@gmail.com" && $password == "ebel1")
 		 || ($username == "thomasjebel@gmail.com" && $password == "ebel2")
 	) {
 		echo("<div>Hi</div>");
 	} else {
-		echo("<div>Sorry You Are Not allowed IN</div>");
+		echo("<div>Sorry You Are Not Allowed IN</div>");
 	} 
-
-
 } else {
-
 echo('
-
 <form action="passwordpage.php" method="post">
 Username:</br> 
 <input type="text" name="user">
@@ -41,8 +35,6 @@ Password:</br>
 <input type="submit" value="Log In">
 </form>
 </br></br>
-
-
 ');
 }
 ?>
