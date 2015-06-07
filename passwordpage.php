@@ -11,7 +11,7 @@ div {}
 
 <body>
 
-<form action="passwordpage.php">
+<form action="passwordpage.php" method="post">
 Username:</br> 
 <input type="text" name="user">
 </br>
