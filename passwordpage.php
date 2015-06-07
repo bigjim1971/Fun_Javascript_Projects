@@ -11,7 +11,18 @@ div {}
 
 <body>
 
-<div >Hi</div>
+<form action="passwordpage.php">
+Username:</br> 
+<input type="text" name="user">
+Password:</br> 
+<input type="text" name="pass">
+</br>
+<input type="submit" value="Log In">
+</form>
+
+</br></br>
+
+<div>Hi</div>
 
 
 
