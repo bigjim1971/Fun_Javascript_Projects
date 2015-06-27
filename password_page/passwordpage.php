@@ -27,6 +27,8 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
 		echo("<div>Sorry You Are Not Allowed IN</div>");
 	} 
 } else {
+$_POST["user"] = "";
+$_POST["pass"] = "";
 echo('
 <form action="passwordpage.php" method="post">
 Username:</br> 
