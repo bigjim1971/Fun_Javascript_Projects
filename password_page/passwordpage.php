@@ -15,6 +15,8 @@ div {margin: 200px auto ; font-size: 450%; color: black; width: 200px; height: 1
 if (isset($_POST["user"]) && isset($_POST["pass"])) {
 	$username = $_POST["user"]; // User Name
 	$password = $_POST["pass"]; // Password
+	$username = strtolower($username);
+	$password = strtolower($password);
 	$username = md5($username);
 	$password = md5($password);
 	if (    ($username == "25699f04d3a65f923ad0f2fbbfa1cb39 " && $password == "06ba39c3635ecc77bd10918c0622df11 ")
