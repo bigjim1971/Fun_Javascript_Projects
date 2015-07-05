@@ -41,37 +41,36 @@ div {margin: 200px auto ; font-size: 450%; color: black; width: 200px; height: 1
 <?php
 
 
+if (isset($_SESSION['password']) && $_SESSION['password'] == "allowed") {
+	echo('
+	<form action="index.php" method="post">
+	<input type="submit" value="logout" name="logout">
+	</form>
 
-	if (isset($_SESSION['password']) && $_SESSION['password'] == "allowed") {
-		echo('
-		<form action="index.php" method="post">
-		<input type="submit" value="logout" name="logout">
-		</form>
-
-		<a href="page1.php">Page 1</a>
-		</br></br>
-		<a href="page2.php">Page 2</a>
-		</br></br>
-		<a href="page3.php">Page 3</a>
-		</br></br>
-		');
-	} else {
-		$_POST["user"] = "";
-		$_POST["pass"] = "";
-		echo('
-		<form action="index.php" method="post">
-		Username:</br> 
-		<input type="text" name="user">
-		</br>
-		Password:</br> 
-		<input type="text" name="pass">
-		</br>
-		</br>
-		<input type="submit" value="Log In">
-		</form>
-		</br></br>
-		');
-	}	
+	<a href="page1.php">Page 1</a>
+	</br></br>
+	<a href="page2.php">Page 2</a>
+	</br></br>
+	<a href="page3.php">Page 3</a>
+	</br></br>
+	');
+} else {
+	$_POST["user"] = "";
+	$_POST["pass"] = "";
+	echo('
+	<form action="index.php" method="post">
+	Username:</br> 
+	<input type="text" name="user">
+	</br>
+	Password:</br> 
+	<input type="text" name="pass">
+	</br>
+	</br>
+	<input type="submit" value="Log In">
+	</form>
+	</br></br>
+	');
+}	
 
 
 ?>
