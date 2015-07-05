@@ -2,7 +2,7 @@
 	session_start();
 	
 	
-	if (isset($_SESSION['password'])) && ($_SESSION['password'] == "allowed")) {} else {
+	if (isset($_SESSION['password']) && ($_SESSION['password'] == "allowed")) {} else {
 		//header( 'Location: http://localhost/sites/login_pages/index.php' ) ;
 		header( 'Location: http://localhost:8888/sites/login_pages/index.php' ) ;
 	} 
