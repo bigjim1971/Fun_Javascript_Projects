@@ -5,7 +5,7 @@ ini_set("display_errors", 1);
 //print_r($_FILES);
 ?>
 
-<a href="index.php">HOME<?a>
+<a href="index.php">HOME</a>
 
 
 <?php
