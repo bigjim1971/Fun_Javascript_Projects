@@ -12,7 +12,9 @@ $targetPath = $targetPath . basename( $_FILES['uploadfile']['name'] );
 
 if ( $_FILES['uploadfile']['size'] < 1000000 ) {
 
-	if ( substr( $_FILES['uploadfile']['name'], -3 ) == 'jpg' ) {
+	$file_name = $_FILES['uploadfile']['name'];
+	$file_name = strtolower($file_name);
+	if ( substr($file_name , -3 ) == 'jpg' ) {
 
 
 		if ( move_uploaded_file( $_FILES['uploadfile']['tmp_name'], $targetPath) ) {
@@ -31,6 +33,5 @@ if ( $_FILES['uploadfile']['size'] < 1000000 ) {
 } else {
 	echo ( "The file size is too large" );
 }
-
 
 ?>
