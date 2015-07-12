@@ -23,7 +23,7 @@ if ( $_FILES['uploadfile']['size'] < 1000000 ) {
 
 
 		if ( move_uploaded_file( $_FILES['uploadfile']['tmp_name'], $targetPath) ) {
-			echo( "The file" . basename( $_FILES['uploadfile']['name'] ) . " has been uploaded" );
+			echo( "The file " . basename( $_FILES['uploadfile']['name'] ) . " has been uploaded" );
 		} else {
 			echo( "There was an error uploading the file, please try again!" );
 		}
