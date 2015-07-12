@@ -11,7 +11,7 @@ $targetPath = "uploads/";
 $targetPath = $targetPath . basename( $_FILES['uploadfile']['name'] );
 
 if ( move_uploaded_file( $_FILES['uploadfile']['tmp_name'], $targetPath) ) {
-	echo( "The file" . basename( $_FILES['uploadedfile']['name'] ) . " has been uploaded" );
+	echo( "The file" . basename( $_FILES['uploadfile']['name'] ) . " has been uploaded" );
 } else {
 	echo( "There was an error uploading the file, please try again!" );
 }
