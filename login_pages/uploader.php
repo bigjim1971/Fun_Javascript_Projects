@@ -1,12 +1,9 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-//print_r($_FILES);
-?>
 
-<a href="index.php">Home</a>
+print_r($_FILES);
 
-<?php
 //What folder to save it in
 $targetPath = "uploads/";
 
@@ -34,12 +31,6 @@ if ( $_FILES['uploadfile']['size'] < 1000000 ) {
 } else {
 	echo ( "The file size is too large" );
 }
-
-
-
-
-
-
 
 
 ?>
