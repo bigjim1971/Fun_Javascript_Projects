@@ -8,9 +8,9 @@ print_r($_FILES);
 $targetPath = "uploads/";
 
 //Build the store path
-$targetPath = $targetPath . basename( $_FILES['uploadedfile']['name'] );
+$targetPath = $targetPath . basename( $_FILES['uploadfile']['name'] );
 
-if ( move_uploaded_file( $_FILES['uploadedfile']['tmp_name'], $targetPath) ) {
+if ( move_uploaded_file( $_FILES['uploadfile']['tmp_name'], $targetPath) ) {
 	echo( "The file" . basename( $_FILES['uploadedfile']['name'] ) . " has been uploaded" );
 } else {
 	echo( "There was an error uploading the file, please try again!" );
