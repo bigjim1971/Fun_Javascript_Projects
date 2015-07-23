@@ -1,6 +1,6 @@
 <?php
 	require_once('load.php');
-	$loginObj->redirect()
+	$loginObj->redirect();
 ?>
 
 <!DOCTYPE html>
