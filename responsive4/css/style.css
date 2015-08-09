@@ -1,0 +1,42 @@
+img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 69.2px;
+	padding-top: 6.9364161849710982658959537572254%;
+	width: 80%;
+	height: 80%;
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+div {
+	margin: 50px auto;
+	padding: 0px;
+	border: 0px;
+	background-color: #ccc;
+}
+
+@media (min-width: 300px) {
+div {
+	width: 280px;
+	height: 202px;
+}
+
+}
+@media (min-width: 700px) {
+div {
+	width: 680px;
+	height: 490px;
+}	
+}
+
+@media (min-width: 1000px) {
+div {
+	width: 960px;
+	height: 692px;
+}	
+}
+
+
