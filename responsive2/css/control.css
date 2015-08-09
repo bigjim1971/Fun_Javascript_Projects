@@ -1,0 +1,38 @@
+#controlbox {
+	position: fixed;
+	background-color: rgba(128, 128, 255, 0.6);
+	width: 160px;
+	height: 200px;
+	top: -180px;
+	right: -140px;
+	background-image: url("../img/control-button.png");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+
+	border-radius: 0 0 0 6px;
+	/*Timing function is placed here in the containing element*/
+-webkit-transition: all 1.2s ease-out; /* Safari 3.2+, Chrome  */
+   -moz-transition: all 1.2s ease-out; /* Firefox 4-15  */
+     -o-transition: all 1.2s ease-out; /* Opera 10.5-12.08  */
+        transition: all 1.2s ease-out; /* Firefox 16+, Opera 12.50+  */
+}
+
+#controlbox li {margin: 10px 0px 10px 30px;}
+
+#controlbox li a {
+	color: white;
+	width: 100px;
+	height: 30px;
+	background-color: red;
+	text-decoration: none;
+}
+
+#controlbox li a:hover {
+	color: red;
+	background-color: white;
+}
+
+#controlbox:hover {
+	top: 0;
+	right: 0;
+}
